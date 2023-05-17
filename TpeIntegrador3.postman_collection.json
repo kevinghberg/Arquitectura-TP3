@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "5ffb73b1-477c-498b-a673-d96fa57ab633",
+		"name": "TpeIntegrador3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16050672"
+	},
+	"item": [
+		{
+			"name": "a) agregarEstudiante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dni\":1232221,\r\n    \"nombre\":\"otra vez\",\r\n    \"apellido\":\"Gersinho Quepelota\",\r\n    \"ciudadResidencia\":\"Rio do janeiro\",\r\n    \"numLibreta\":12322233,\r\n    \"genero\":true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/estudiantes/agregarEstudiante/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estudiantes",
+						"agregarEstudiante",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "b) /relaciones/agregarRelacion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCarrera\": 2,\r\n    \"idEstudiante\": 2,\r\n    \"graduado\": true,\r\n    \"fechaIngreso\": \"2023-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/relaciones/agregarRelacion/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"relaciones",
+						"agregarRelacion",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "c) estudiantes/estudiantesOrdenados",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/estudiantes/estudiantesOrdenados/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estudiantes",
+						"estudiantesOrdenados",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "d) /estudiantes/numeroLibreta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/estudiantes/numerolibreta/1234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estudiantes",
+						"numerolibreta",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "e) /estudiantes/genero/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/estudiantes/genero/0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estudiantes",
+						"genero",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "f) /relaciones/cantidadinscriptos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/relaciones/cantidadinscriptos/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"relaciones",
+						"cantidadinscriptos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "g) estudiantes/carrera//ciudad//",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/estudiantes/carrera/tudai/ciudad/ciudadResidencia/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estudiantes",
+						"carrera",
+						"tudai",
+						"ciudad",
+						"ciudadResidencia",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "h) ReporteDto",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/relaciones/puntoh/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"relaciones",
+						"puntoh",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
